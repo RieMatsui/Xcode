@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>myFirstGame.xcscheme</key>
+		<key>SinpleCalc.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>18F761151E136B7000FDA17F</key>
+		<key>18DE2AE71E11F694009F753B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

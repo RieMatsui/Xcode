@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  myFirstGame
+//  SinpleCalc
 //
-//  Created by 松井 里衣 on 2016/12/28.
+//  Created by 松井 里衣 on 2016/12/27.
 //  Copyright © 2016年 松井　里衣. All rights reserved.
 //
 

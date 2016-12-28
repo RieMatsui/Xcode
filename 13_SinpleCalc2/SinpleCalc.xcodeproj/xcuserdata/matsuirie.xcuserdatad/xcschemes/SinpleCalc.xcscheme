@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18F761151E136B7000FDA17F"
-               BuildableName = "myFirstGame.app"
-               BlueprintName = "myFirstGame"
-               ReferencedContainer = "container:myFirstGame.xcodeproj">
+               BlueprintIdentifier = "18DE2AE71E11F694009F753B"
+               BuildableName = "SinpleCalc.app"
+               BlueprintName = "SinpleCalc"
+               ReferencedContainer = "container:SinpleCalc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18F761151E136B7000FDA17F"
-            BuildableName = "myFirstGame.app"
-            BlueprintName = "myFirstGame"
-            ReferencedContainer = "container:myFirstGame.xcodeproj">
+            BlueprintIdentifier = "18DE2AE71E11F694009F753B"
+            BuildableName = "SinpleCalc.app"
+            BlueprintName = "SinpleCalc"
+            ReferencedContainer = "container:SinpleCalc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18F761151E136B7000FDA17F"
-            BuildableName = "myFirstGame.app"
-            BlueprintName = "myFirstGame"
-            ReferencedContainer = "container:myFirstGame.xcodeproj">
+            BlueprintIdentifier = "18DE2AE71E11F694009F753B"
+            BuildableName = "SinpleCalc.app"
+            BlueprintName = "SinpleCalc"
+            ReferencedContainer = "container:SinpleCalc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18F761151E136B7000FDA17F"
-            BuildableName = "myFirstGame.app"
-            BlueprintName = "myFirstGame"
-            ReferencedContainer = "container:myFirstGame.xcodeproj">
+            BlueprintIdentifier = "18DE2AE71E11F694009F753B"
+            BuildableName = "SinpleCalc.app"
+            BlueprintName = "SinpleCalc"
+            ReferencedContainer = "container:SinpleCalc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
