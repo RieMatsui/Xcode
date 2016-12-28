@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18DE2AEC1E11F695009F753B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE2AEB1E11F695009F753B /* AppDelegate.swift */; };
-		18DE2AEE1E11F695009F753B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE2AED1E11F695009F753B /* ViewController.swift */; };
-		18DE2AF11E11F695009F753B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DE2AEF1E11F695009F753B /* Main.storyboard */; };
-		18DE2AF31E11F695009F753B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DE2AF21E11F695009F753B /* Assets.xcassets */; };
-		18DE2AF61E11F695009F753B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DE2AF41E11F695009F753B /* LaunchScreen.storyboard */; };
+		18AD3FA01E1388770057D06A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD3F9F1E1388770057D06A /* AppDelegate.swift */; };
+		18AD3FA21E1388770057D06A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD3FA11E1388770057D06A /* ViewController.swift */; };
+		18AD3FA51E1388770057D06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AD3FA31E1388770057D06A /* Main.storyboard */; };
+		18AD3FA71E1388770057D06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AD3FA61E1388770057D06A /* Assets.xcassets */; };
+		18AD3FAA1E1388770057D06A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AD3FA81E1388770057D06A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18DE2AE81E11F695009F753B /* SinpleCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinpleCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18DE2AEB1E11F695009F753B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18DE2AED1E11F695009F753B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18DE2AF01E11F695009F753B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18DE2AF21E11F695009F753B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18DE2AF51E11F695009F753B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		18DE2AF71E11F695009F753B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AD3F9C1E1388770057D06A /* myCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AD3F9F1E1388770057D06A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18AD3FA11E1388770057D06A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18AD3FA41E1388770057D06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18AD3FA61E1388770057D06A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18AD3FA91E1388770057D06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18AD3FAB1E1388770057D06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		18DE2AE51E11F694009F753B /* Frameworks */ = {
+		18AD3F991E1388770057D06A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,72 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18DE2ADF1E11F694009F753B = {
+		18AD3F931E1388770057D06A = {
 			isa = PBXGroup;
 			children = (
-				18DE2AEA1E11F695009F753B /* SinpleCalc */,
-				18DE2AE91E11F695009F753B /* Products */,
+				18AD3F9E1E1388770057D06A /* myCalc */,
+				18AD3F9D1E1388770057D06A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		18DE2AE91E11F695009F753B /* Products */ = {
+		18AD3F9D1E1388770057D06A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18DE2AE81E11F695009F753B /* SinpleCalc.app */,
+				18AD3F9C1E1388770057D06A /* myCalc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		18DE2AEA1E11F695009F753B /* SinpleCalc */ = {
+		18AD3F9E1E1388770057D06A /* myCalc */ = {
 			isa = PBXGroup;
 			children = (
-				18DE2AEB1E11F695009F753B /* AppDelegate.swift */,
-				18DE2AED1E11F695009F753B /* ViewController.swift */,
-				18DE2AEF1E11F695009F753B /* Main.storyboard */,
-				18DE2AF21E11F695009F753B /* Assets.xcassets */,
-				18DE2AF41E11F695009F753B /* LaunchScreen.storyboard */,
-				18DE2AF71E11F695009F753B /* Info.plist */,
+				18AD3F9F1E1388770057D06A /* AppDelegate.swift */,
+				18AD3FA11E1388770057D06A /* ViewController.swift */,
+				18AD3FA31E1388770057D06A /* Main.storyboard */,
+				18AD3FA61E1388770057D06A /* Assets.xcassets */,
+				18AD3FA81E1388770057D06A /* LaunchScreen.storyboard */,
+				18AD3FAB1E1388770057D06A /* Info.plist */,
 			);
-			path = SinpleCalc;
+			path = myCalc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18DE2AE71E11F694009F753B /* SinpleCalc */ = {
+		18AD3F9B1E1388770057D06A /* myCalc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18DE2AFA1E11F695009F753B /* Build configuration list for PBXNativeTarget "SinpleCalc" */;
+			buildConfigurationList = 18AD3FAE1E1388770057D06A /* Build configuration list for PBXNativeTarget "myCalc" */;
 			buildPhases = (
-				18DE2AE41E11F694009F753B /* Sources */,
-				18DE2AE51E11F694009F753B /* Frameworks */,
-				18DE2AE61E11F694009F753B /* Resources */,
+				18AD3F981E1388770057D06A /* Sources */,
+				18AD3F991E1388770057D06A /* Frameworks */,
+				18AD3F9A1E1388770057D06A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SinpleCalc;
-			productName = SinpleCalc;
-			productReference = 18DE2AE81E11F695009F753B /* SinpleCalc.app */;
+			name = myCalc;
+			productName = myCalc;
+			productReference = 18AD3F9C1E1388770057D06A /* myCalc.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		18DE2AE01E11F694009F753B /* Project object */ = {
+		18AD3F941E1388770057D06A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "松井　里衣";
 				TargetAttributes = {
-					18DE2AE71E11F694009F753B = {
+					18AD3F9B1E1388770057D06A = {
 						CreatedOnToolsVersion = 8.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 18DE2AE31E11F694009F753B /* Build configuration list for PBXProject "SinpleCalc" */;
+			buildConfigurationList = 18AD3F971E1388770057D06A /* Build configuration list for PBXProject "myCalc" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,54 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 18DE2ADF1E11F694009F753B;
-			productRefGroup = 18DE2AE91E11F695009F753B /* Products */;
+			mainGroup = 18AD3F931E1388770057D06A;
+			productRefGroup = 18AD3F9D1E1388770057D06A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18DE2AE71E11F694009F753B /* SinpleCalc */,
+				18AD3F9B1E1388770057D06A /* myCalc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		18DE2AE61E11F694009F753B /* Resources */ = {
+		18AD3F9A1E1388770057D06A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18DE2AF61E11F695009F753B /* LaunchScreen.storyboard in Resources */,
-				18DE2AF31E11F695009F753B /* Assets.xcassets in Resources */,
-				18DE2AF11E11F695009F753B /* Main.storyboard in Resources */,
+				18AD3FAA1E1388770057D06A /* LaunchScreen.storyboard in Resources */,
+				18AD3FA71E1388770057D06A /* Assets.xcassets in Resources */,
+				18AD3FA51E1388770057D06A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		18DE2AE41E11F694009F753B /* Sources */ = {
+		18AD3F981E1388770057D06A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18DE2AEE1E11F695009F753B /* ViewController.swift in Sources */,
-				18DE2AEC1E11F695009F753B /* AppDelegate.swift in Sources */,
+				18AD3FA21E1388770057D06A /* ViewController.swift in Sources */,
+				18AD3FA01E1388770057D06A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18DE2AEF1E11F695009F753B /* Main.storyboard */ = {
+		18AD3FA31E1388770057D06A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				18DE2AF01E11F695009F753B /* Base */,
+				18AD3FA41E1388770057D06A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		18DE2AF41E11F695009F753B /* LaunchScreen.storyboard */ = {
+		18AD3FA81E1388770057D06A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				18DE2AF51E11F695009F753B /* Base */,
+				18AD3FA91E1388770057D06A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		18DE2AF81E11F695009F753B /* Debug */ = {
+		18AD3FAC1E1388770057D06A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		18DE2AF91E11F695009F753B /* Release */ = {
+		18AD3FAD1E1388770057D06A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,25 +254,25 @@
 			};
 			name = Release;
 		};
-		18DE2AFB1E11F695009F753B /* Debug */ = {
+		18AD3FAF1E1388770057D06A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SinpleCalc/Info.plist;
+				INFOPLIST_FILE = myCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.matsui.SinpleCalc;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.matsui.myCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		18DE2AFC1E11F695009F753B /* Release */ = {
+		18AD3FB01E1388770057D06A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SinpleCalc/Info.plist;
+				INFOPLIST_FILE = myCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.matsui.SinpleCalc;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.matsui.myCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -281,24 +281,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18DE2AE31E11F694009F753B /* Build configuration list for PBXProject "SinpleCalc" */ = {
+		18AD3F971E1388770057D06A /* Build configuration list for PBXProject "myCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18DE2AF81E11F695009F753B /* Debug */,
-				18DE2AF91E11F695009F753B /* Release */,
+				18AD3FAC1E1388770057D06A /* Debug */,
+				18AD3FAD1E1388770057D06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18DE2AFA1E11F695009F753B /* Build configuration list for PBXNativeTarget "SinpleCalc" */ = {
+		18AD3FAE1E1388770057D06A /* Build configuration list for PBXNativeTarget "myCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18DE2AFB1E11F695009F753B /* Debug */,
-				18DE2AFC1E11F695009F753B /* Release */,
+				18AD3FAF1E1388770057D06A /* Debug */,
+				18AD3FB01E1388770057D06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 18DE2AE01E11F694009F753B /* Project object */;
+	rootObject = 18AD3F941E1388770057D06A /* Project object */;
 }

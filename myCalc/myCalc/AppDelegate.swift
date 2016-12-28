@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SinpleCalc
+//  myCalc
 //
-//  Created by 松井 里衣 on 2016/12/27.
+//  Created by 松井 里衣 on 2016/12/28.
 //  Copyright © 2016年 松井　里衣. All rights reserved.
 //
 
