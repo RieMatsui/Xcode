@@ -14,21 +14,24 @@ class ViewController: UIViewController {
 	@IBOutlet weak var tfValue02: UITextField!
 	@IBOutlet weak var lbResult: UILabel!
 	
-	
+	//起動時に行うメソッド
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 	}
-
+	
+	//メモリエラー時に行うメソッド
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
-
+	
+	//キーボードの確定ボタンを押した時に行うメソッド
 	@IBAction func pushRetrun(_ sender: Any) {
 		
 	}
 
+	//四則演算キーを押した時のメソッド
 	@IBAction func doCalc(_ sender: UIButton) {
 		
 		//テキストフィールドの値を定数を宣言(String型）
@@ -77,19 +80,28 @@ class ViewController: UIViewController {
 			
 		}
 		
-		
+		//整数型から文字列型に変換
 		let res2 = String(res)
 		lbResult.text = res2
-	
 		
+		//キーボードが動作しないようにする
+		tfValue01.resignFirstResponder()
+		tfValue02.resignFirstResponder()
 		
 	}
 
-	@IBAction func btClear(_ sender: Any) {
-		
+	@IBAction func textClear(_ sender: Any) {
+
+		//値を空で返す
 		tfValue01.text = nil
 		tfValue02.text = nil
 		lbResult.text = nil
+		
+		
+		//キーボードが動作しないようにする
+		tfValue01.resignFirstResponder()
+		tfValue02.resignFirstResponder()
+		
 	}
 	
 }
