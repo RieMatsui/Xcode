@@ -14,10 +14,18 @@ class ViewController: UIViewController {
 	@IBOutlet weak var tfValue02: UITextField!
 	@IBOutlet weak var lbResult: UILabel!
 	
+	
+	
 	//起動時に行うメソッド
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		
+		// ボタンの枠を丸くする.
+		lbResult.layer.masksToBounds = true
+		
+		// コーナーの半径を設定する.
+		lbResult.layer.cornerRadius = 20.0
 	}
 	
 	//メモリエラー時に行うメソッド
