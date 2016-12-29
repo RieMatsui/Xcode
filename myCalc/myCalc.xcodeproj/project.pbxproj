@@ -12,6 +12,8 @@
 		18AD3FA51E1388770057D06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AD3FA31E1388770057D06A /* Main.storyboard */; };
 		18AD3FA71E1388770057D06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AD3FA61E1388770057D06A /* Assets.xcassets */; };
 		18AD3FAA1E1388770057D06A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AD3FA81E1388770057D06A /* LaunchScreen.storyboard */; };
+		18BB00361E153DB400E00A47 /* 背景ボーダー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18BB00351E153DB400E00A47 /* 背景ボーダー.jpg */; };
+		18BB00381E153F0400E00A47 /* 背景青.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18BB00371E153F0400E00A47 /* 背景青.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		18AD3FA61E1388770057D06A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18AD3FA91E1388770057D06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18AD3FAB1E1388770057D06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BB00351E153DB400E00A47 /* 背景ボーダー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "背景ボーダー.jpg"; sourceTree = "<group>"; };
+		18BB00371E153F0400E00A47 /* 背景青.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "背景青.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		18AD3F9E1E1388770057D06A /* myCalc */ = {
 			isa = PBXGroup;
 			children = (
+				18BB00371E153F0400E00A47 /* 背景青.jpeg */,
+				18BB00351E153DB400E00A47 /* 背景ボーダー.jpg */,
 				18AD3F9F1E1388770057D06A /* AppDelegate.swift */,
 				18AD3FA11E1388770057D06A /* ViewController.swift */,
 				18AD3FA31E1388770057D06A /* Main.storyboard */,
@@ -125,7 +131,9 @@
 			files = (
 				18AD3FAA1E1388770057D06A /* LaunchScreen.storyboard in Resources */,
 				18AD3FA71E1388770057D06A /* Assets.xcassets in Resources */,
+				18BB00361E153DB400E00A47 /* 背景ボーダー.jpg in Resources */,
 				18AD3FA51E1388770057D06A /* Main.storyboard in Resources */,
+				18BB00381E153F0400E00A47 /* 背景青.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +305,7 @@
 				18AD3FB01E1388770057D06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

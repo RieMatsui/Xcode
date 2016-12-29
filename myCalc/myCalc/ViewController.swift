@@ -9,15 +9,48 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+	
 	@IBOutlet weak var tfValue01: UITextField!
 	@IBOutlet weak var tfValue02: UITextField!
 	@IBOutlet weak var lbResult: UILabel!
 	
+	
+    //それぞれのボタンにアウトレット設定をする
+	@IBOutlet weak var btTasu: UIButton!
+	@IBOutlet weak var btHiku: UIButton!
+	@IBOutlet weak var btWaru: UIButton!
+	@IBOutlet weak var btKakeru: UIButton!
+	
+	//クリアボタンのアウトレット設定
+	@IBOutlet weak var btClear: UIButton!
+	
+	//MARK: - プロパティ（フィールド） メソッド
 	//起動時に行うメソッド
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		
+		//クリアボタンを丸くしコーナーの半径を設定する.
+		btClear.layer.masksToBounds = true
+		btClear.layer.cornerRadius = 20.0
+		
+		// 四則演算ボタンの枠を丸くする.
+		btTasu.layer.masksToBounds = true
+		btHiku.layer.masksToBounds = true
+		btKakeru.layer.masksToBounds = true
+		btWaru.layer.masksToBounds = true
+		
+		// 四則演算ボタンのコーナーの半径を設定する.
+		btTasu.layer.cornerRadius = 35.0
+		btHiku.layer.cornerRadius = 35.0
+		btKakeru.layer.cornerRadius = 35.0
+		btWaru.layer.cornerRadius = 35.0
+		
+		// 結果ボタンの枠を丸くしコーナーの半径を設定する.
+	    lbResult.layer.masksToBounds = true
+		lbResult.layer.cornerRadius = 20.0
+		
+		
 	}
 	
 	//メモリエラー時に行うメソッド
@@ -25,6 +58,8 @@ class ViewController: UIViewController {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
+	
+	        //MARK: - アクション メソッド
 	
 	//キーボードの確定ボタンを押した時に行うメソッド
 	@IBAction func pushRetrun(_ sender: Any) {
@@ -37,29 +72,31 @@ class ViewController: UIViewController {
 		//テキストフィールドの値を定数を宣言(String型）
 		let str01 = tfValue01.text!
 		let str02 = tfValue02.text!
+
 		
 		//String型から整数型に変換
 		let num01 = Int(str01)!
 		let num02 = Int(str02)!
 		
-		var res = 0
+		//resの値を初期化
+		var res = ""
 		
 		//+ボタンを押した時
 		if sender.tag == 1{
 			
-		   res = num01 + num02
+		  res = String(num01 + num02)
 			
 	   }
 		//-ボタンを押した時
 		else if sender.tag == 2{
 			
-			res = num01 - num02
+			res = String(num01 - num02)
 			
 		}
 		//×ボタンを押した時
 		else if sender.tag == 3{
 			
-			res = num01 * num02
+			res = String(num01 * num02)
 			
 		}
 		//÷ボタンを押した時
@@ -68,9 +105,11 @@ class ViewController: UIViewController {
 			if num02 != 0 {
 			
 		//num02が0ではない時は計算します
-               res = num01 / num02
-			}
-			
+
+			res = String(Float(num01) / Float(num02))
+				
+		}
+
 			else{
 		//num02が0の時は入力できないと表示
 			  lbResult.text = "0は入力できません"
@@ -80,9 +119,8 @@ class ViewController: UIViewController {
 			
 		}
 		
-		//整数型から文字列型に変換
-		let res2 = String(res)
-		lbResult.text = res2
+
+		lbResult.text = res
 		
 		//キーボードが動作しないようにする
 		tfValue01.resignFirstResponder()
