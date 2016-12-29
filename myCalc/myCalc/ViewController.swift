@@ -37,17 +37,19 @@ class ViewController: UIViewController {
 		//テキストフィールドの値を定数を宣言(String型）
 		let str01 = tfValue01.text!
 		let str02 = tfValue02.text!
+
 		
 		//String型から整数型に変換
 		let num01 = Int(str01)!
 		let num02 = Int(str02)!
 		
+		//resの値を初期化
 		var res = 0
 		
 		//+ボタンを押した時
 		if sender.tag == 1{
 			
-		   res = num01 + num02
+		  res = num01 + num02
 			
 	   }
 		//-ボタンを押した時
@@ -68,9 +70,11 @@ class ViewController: UIViewController {
 			if num02 != 0 {
 			
 		//num02が0ではない時は計算します
-               res = num01 / num02
-			}
-			
+
+			res = num01 / num02
+				
+		}
+
 			else{
 		//num02が0の時は入力できないと表示
 			  lbResult.text = "0は入力できません"
