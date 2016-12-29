@@ -20,6 +20,7 @@ class ViewController: UIViewController {
 	@IBOutlet weak var btHiku: UIButton!
 	@IBOutlet weak var btWaru: UIButton!
 	@IBOutlet weak var btKakeru: UIButton!
+	@IBOutlet weak var btAmari: UIButton!
 	
 	//クリアボタンのアウトレット設定
 	@IBOutlet weak var btClear: UIButton!
@@ -39,12 +40,14 @@ class ViewController: UIViewController {
 		btHiku.layer.masksToBounds = true
 		btKakeru.layer.masksToBounds = true
 		btWaru.layer.masksToBounds = true
+		btAmari.layer.masksToBounds = true
 		
 		// 四則演算ボタンのコーナーの半径を設定する.
-		btTasu.layer.cornerRadius = 35.0
-		btHiku.layer.cornerRadius = 35.0
-		btKakeru.layer.cornerRadius = 35.0
-		btWaru.layer.cornerRadius = 35.0
+		btTasu.layer.cornerRadius = 25.0
+		btHiku.layer.cornerRadius = 25.0
+		btKakeru.layer.cornerRadius = 25.0
+		btWaru.layer.cornerRadius = 25.0
+		btAmari.layer.cornerRadius = 25.0
 		
 		// 結果ボタンの枠を丸くしコーナーの半径を設定する.
 	    lbResult.layer.masksToBounds = true
@@ -117,6 +120,10 @@ class ViewController: UIViewController {
 			}
 			
 			
+		}
+		
+		else if sender.tag == 5 {
+			res = String(num01 % num02)
 		}
 		
 
