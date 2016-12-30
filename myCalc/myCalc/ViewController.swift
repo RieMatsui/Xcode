@@ -64,14 +64,32 @@ class ViewController: UIViewController {
 	
 	        //MARK: - アクション メソッド
 	
+	@IBAction func pushNum(_ sender: UIButton) {
+		
+		if sender.tag == 1 {
+			
+			tfValue01.text = "1"
+		}
+		
+	}
+	
+	
 	//キーボードの確定ボタンを押した時に行うメソッド
 	@IBAction func pushRetrun(_ sender: Any) {
-		
 	}
 
 	//四則演算キーを押した時のメソッド
 	@IBAction func doCalc(_ sender: UIButton) {
 		
+		switch sender.tag {
+		case 1: tfValue01.text = "1"
+			return
+		
+		case
+		
+			
+		default:
+	
 		//テキストフィールドの値を定数を宣言(String型）
 		let str01 = tfValue01.text!
 		let str02 = tfValue02.text!
@@ -85,25 +103,25 @@ class ViewController: UIViewController {
 		var res = ""
 		
 		//+ボタンを押した時
-		if sender.tag == 1{
+		if sender.tag == 10{
 			
 		  res = String(num01 + num02)
 			
 	   }
 		//-ボタンを押した時
-		else if sender.tag == 2{
+		else if sender.tag == 11{
 			
 			res = String(num01 - num02)
 			
 		}
 		//×ボタンを押した時
-		else if sender.tag == 3{
+		else if sender.tag == 12{
 			
 			res = String(num01 * num02)
 			
 		}
 		//÷ボタンを押した時
-		else if sender.tag == 4{
+		else if sender.tag == 13{
 
 			if num02 != 0 {
 			
@@ -122,16 +140,18 @@ class ViewController: UIViewController {
 			
 		}
 		
-		else if sender.tag == 5 {
+		else if sender.tag == 14 {
 			res = String(num01 % num02)
 		}
 		
-
+		
 		lbResult.text = res
 		
 		//キーボードが動作しないようにする
 		tfValue01.resignFirstResponder()
 		tfValue02.resignFirstResponder()
+			
+		}
 		
 	}
 
@@ -146,6 +166,8 @@ class ViewController: UIViewController {
 		//キーボードが動作しないようにする
 		tfValue01.resignFirstResponder()
 		tfValue02.resignFirstResponder()
+		
+		
 		
 	}
 	
