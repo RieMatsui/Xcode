@@ -154,7 +154,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushKakeru:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1E-mz-GyZ"/>
+                                    <action selector="pushEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pyC-KU-xvV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sK2-e7-qOw">
@@ -221,7 +221,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushTasu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w2N-YH-VMP"/>
+                                    <action selector="pushEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sCa-Uq-g3l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxD-il-kOL">
@@ -245,7 +245,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushHiku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UfY-k8-Bvb"/>
+                                    <action selector="pushEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fMD-M4-HUp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -264,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2390" y="-1155"/>
+            <point key="canvasLocation" x="2564" y="-1163"/>
         </scene>
     </scenes>
     <resources>
