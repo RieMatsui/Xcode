@@ -154,7 +154,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pyC-KU-xvV"/>
+                                    <action selector="pushKakeru:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mcH-hi-lr3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sK2-e7-qOw">
@@ -221,7 +221,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sCa-Uq-g3l"/>
+                                    <action selector="pushTasu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZq-OP-TMi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxD-il-kOL">
@@ -245,7 +245,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fMD-M4-HUp"/>
+                                    <action selector="pushHiku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mhc-Ud-zbN"/>
                                 </connections>
                             </button>
                         </subviews>
