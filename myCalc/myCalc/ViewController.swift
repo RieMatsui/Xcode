@@ -22,6 +22,8 @@ class ViewController: UIViewController {
 	@IBOutlet weak var btKakeru: UIButton!
 	@IBOutlet weak var btAmari: UIButton!
 	
+	var
+	
 	//クリアボタンのアウトレット設定
 	@IBOutlet weak var btClear: UIButton!
 	
@@ -169,10 +171,16 @@ class ViewController: UIViewController {
 		
 		let userDefaults = UserDefaults.standard
 		let loadtasu = userDefaults.integer(forKey: "Tasu")
-		let a = loadtasu + Int(tfValue01.text!)!
 		
-		lbResult.text = String(a)
-		userDefaults.removeObject(forKey: "Tasu")
+		if loadtasu != nil {
+			
+			let a = loadtasu + Int(tfValue01.text!)!
+			
+			lbResult.text = String(a)
+			userDefaults.removeObject(forKey: "Tasu")
+
+		}
+
 
 		
 		let userDefaults02 = UserDefaults.standard
