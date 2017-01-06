@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 	@IBOutlet weak var btKakeru: UIButton!
 	@IBOutlet weak var btAmari: UIButton!
 	
-	var
+
 	
 	//クリアボタンのアウトレット設定
 	@IBOutlet weak var btClear: UIButton!
@@ -74,7 +74,6 @@ class ViewController: UIViewController {
 	//数字ボタンを押した時のメソッド
 	@IBAction func doCalc(_ sender: UIButton) {
 		
-		
 		lbResult.text = ""
 		switch sender.tag {
 		case 1:
@@ -101,11 +100,13 @@ class ViewController: UIViewController {
 		case 11:
 			 tfValue01.text = nil
 		default:tfValue01.text = ""
+			
 		}
 		
 	}
 	
 	@IBAction func pushTasu(_ sender: Any) {
+		
 		
 		
 		if lbResult.text != "" {
@@ -171,33 +172,27 @@ class ViewController: UIViewController {
 		
 		let userDefaults = UserDefaults.standard
 		let loadtasu = userDefaults.integer(forKey: "Tasu")
-		
-		if loadtasu != nil {
+		let a = loadtasu + Int(tfValue01.text!)!
 			
-			let a = loadtasu + Int(tfValue01.text!)!
-			
-			lbResult.text = String(a)
-			userDefaults.removeObject(forKey: "Tasu")
-
-		}
+		lbResult.text = String(a)
+		userDefaults.removeObject(forKey: "Tasu")
 
 
+//		let userDefaults02 = UserDefaults.standard
+//		let loadHiku = userDefaults02.integer(forKey: "Hiku")
+//		let b = loadHiku - Int(tfValue01.text!)!
+//		
+//		lbResult.text = String(b)
+//		userDefaults02.removeObject(forKey: "Hiku")
+//		
+//		let userDefaults03 = UserDefaults.standard
+//		let loadKakeru = userDefaults03.integer(forKey: "Kakeru")
+//		let c = loadKakeru * Int(tfValue01.text!)!
+//		
+//		lbResult.text = String(c)
+//		userDefaults03.removeObject(forKey: "Kakeru")
 		
-		let userDefaults02 = UserDefaults.standard
-		let loadHiku = userDefaults02.integer(forKey: "Hiku")
-		let b = loadHiku - Int(tfValue01.text!)!
 		
-		lbResult.text = String(b)
-		userDefaults02.removeObject(forKey: "Hiku")
-		
-		let userDefaults03 = UserDefaults.standard
-		let loadKakeru = userDefaults03.integer(forKey: "Kakeru")
-		let c = loadKakeru * Int(tfValue01.text!)!
-		
-		lbResult.text = String(c)
-		userDefaults03.removeObject(forKey: "Kakeru")
-		
-		tfValue01.text = ""
 		
 	}
 	
