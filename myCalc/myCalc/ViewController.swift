@@ -105,9 +105,10 @@ class ViewController: UIViewController {
 		
 	}
 	
-	@IBAction func pushTasu(_ sender: Any) {
+	@IBAction func pushTasu(_ sender: UIButton) {
 		
-		
+		// +キーを押したとき
+		if sender.tag == 1 {
 		
 		if lbResult.text != "" {
 			
@@ -124,7 +125,43 @@ class ViewController: UIViewController {
 			userDefaults.register(defaults: [ "Tasu" : "default" ])
 			userDefaults.set(str01,forKey: "Tasu")
 			tfValue01.text = ""
+		   }
+			
 		}
+		
+		// -キーボードを押した時
+		
+		if sender.tag == 2 {
+			
+		   let userDefaults02 = UserDefaults.standard
+		   let loadHiku = userDefaults02.integer(forKey: "Hiku")
+		   let b = loadHiku - Int(tfValue01.text!)!
+			
+		   lbResult.text = String(b)
+		   userDefaults02.removeObject(forKey: "Hiku")
+			
+		}
+		
+			//イコールを押した時
+			NSLog("\(sender.tag)")
+			
+		if sender.tag == 6{
+			
+		    let userDefaults = UserDefaults.standard
+			let loadtasu = userDefaults.integer(forKey: "Tasu")
+			let a = loadtasu + Int(tfValue01.text!)!
+			
+			lbResult.text = String(a)
+			userDefaults.removeObject(forKey: "Tasu")
+
+			
+			}
+		
+		
+		
+		
+		
+
 		
 	}
 	
@@ -167,15 +204,15 @@ class ViewController: UIViewController {
 		}
 	}
 	
-	@IBAction func pushEqual(_ sender: Any) {
-		
-		
-		let userDefaults = UserDefaults.standard
-		let loadtasu = userDefaults.integer(forKey: "Tasu")
-		let a = loadtasu + Int(tfValue01.text!)!
-			
-		lbResult.text = String(a)
-		userDefaults.removeObject(forKey: "Tasu")
+//	@IBAction func pushEqual(_ sender: Any) {
+//		
+//		
+//		let userDefaults = UserDefaults.standard
+//		let loadtasu = userDefaults.integer(forKey: "Tasu")
+//		let a = loadtasu + Int(tfValue01.text!)!
+//			
+//		lbResult.text = String(a)
+//		userDefaults.removeObject(forKey: "Tasu")
 
 
 //		let userDefaults02 = UserDefaults.standard
@@ -191,10 +228,10 @@ class ViewController: UIViewController {
 //		
 //		lbResult.text = String(c)
 //		userDefaults03.removeObject(forKey: "Kakeru")
-		
-		
-		
-	}
+//		
+//		
+//		
+//	}
 	
 //		//テキストフィールドの値を定数を宣言(String型）
 //		let str01 = tfValue01.text!

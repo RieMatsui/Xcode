@@ -212,7 +212,7 @@
                                 <color key="textColor" red="0.1121654988" green="0.13182648829999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9A-06-gyw">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9A-06-gyw">
                                 <rect key="frame" x="48" y="260" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.3933850311" green="0.1229103557" blue="1" alpha="0.60000002379999995" colorSpace="calibratedRGB"/>
@@ -224,7 +224,7 @@
                                     <action selector="pushTasu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZq-OP-TMi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxD-il-kOL">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxD-il-kOL">
                                 <rect key="frame" x="50" y="325" width="274" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.57191217146826334" blue="0.3296939677264219" alpha="0.60000002379999995" colorSpace="calibratedRGB"/>
@@ -233,11 +233,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSj-Qh-xqI"/>
+                                    <action selector="pushTasu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LAG-B0-jfJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmU-fU-a6q">
-                                <rect key="frame" x="106" y="260" width="50" height="50"/>
+                                <rect key="frame" x="106" y="260" width="50" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.3933850311" green="0.1229103557" blue="1" alpha="0.60000002379999995" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -264,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2564" y="-1163"/>
+            <point key="canvasLocation" x="2476" y="-1584"/>
         </scene>
     </scenes>
     <resources>
