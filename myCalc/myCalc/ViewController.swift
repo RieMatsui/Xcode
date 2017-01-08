@@ -85,8 +85,7 @@ class ViewController: UIViewController {
 		case 1: tfValue01.text = "1"
 			return
 		
-		case
-		
+
 			
 		default:
 	

@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "myCalc/ViewController.swift"
-            timestampString = "505320604.679053"
+            timestampString = "505536570.171192"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
-            landmarkName = "textClear(_:)"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "doCalc(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
