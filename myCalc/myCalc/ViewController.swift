@@ -117,45 +117,66 @@ class ViewController: UIViewController {
 			userDefaults.register(defaults: [ "Tasu" : "default" ])
 			userDefaults.set(sum01,forKey: "Tasu")
 			tfValue01.text = ""
-		}
+				
+			}
+			
+			
+		
 		else{
+			
 			
 			let str01 = tfValue01.text!
 			let userDefaults = UserDefaults.standard
 			userDefaults.register(defaults: [ "Tasu" : "default" ])
 			userDefaults.set(str01,forKey: "Tasu")
 			tfValue01.text = ""
-		   }
 			
+
+			
+			}
+			
+		if sender.tag == 6 && lbResult.text != ""{
+				
+				let userDefaults = UserDefaults.standard
+				let loadtasu = userDefaults.integer(forKey: "Tasu")
+				let a = loadtasu + Int(tfValue01.text!)!
+				
+				lbResult.text = String(a)
+				userDefaults.removeObject(forKey: "Tasu")
+			
+			
+		  }
+			
+		
 		}
 		
 		// -キーボードを押した時
 		
-		if sender.tag == 2 {
-			
-		   let userDefaults02 = UserDefaults.standard
-		   let loadHiku = userDefaults02.integer(forKey: "Hiku")
-		   let b = loadHiku - Int(tfValue01.text!)!
-			
-		   lbResult.text = String(b)
-		   userDefaults02.removeObject(forKey: "Hiku")
-			
-		}
-		
-			//イコールを押した時
-			NSLog("\(sender.tag)")
-			
-		if sender.tag == 6{
-			
-		    let userDefaults = UserDefaults.standard
-			let loadtasu = userDefaults.integer(forKey: "Tasu")
-			let a = loadtasu + Int(tfValue01.text!)!
-			
-			lbResult.text = String(a)
-			userDefaults.removeObject(forKey: "Tasu")
-
-			
-			}
+//		if sender.tag == 2 {
+//			
+//		   let userDefaults02 = UserDefaults.standard
+//		   let loadHiku = userDefaults02.integer(forKey: "Hiku")
+//		   let b = loadHiku - Int(tfValue01.text!)!
+//			
+//		   lbResult.text = String(b)
+//		   userDefaults02.removeObject(forKey: "Hiku")
+//			
+//		}
+//		
+//			//イコールを押した時
+//			NSLog("\(sender.tag)")
+//			
+//		if sender.tag == 6{
+//			
+//		    let userDefaults = UserDefaults.standard
+//			let loadtasu = userDefaults.integer(forKey: "Tasu")
+//			let a = loadtasu + Int(tfValue01.text!)!
+//			
+//			lbResult.text = String(a)
+//			userDefaults.removeObject(forKey: "Tasu")
+//
+//			
+//			}
 		
 		
 		
