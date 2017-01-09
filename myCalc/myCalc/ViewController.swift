@@ -142,7 +142,7 @@ class ViewController: UIViewController {
 			
 			let str01 = tfValue01.text!
 			let userDefaults02 = UserDefaults.standard
-			userDefaults02.register(defaults: [ "Hiku" : "default" ])
+			userDefaults02.register( defaults: [ "Hiku" : "default" ])
 			userDefaults02.set(str01,forKey: "Hiku")
 			tfValue01.text = ""
 		}
@@ -176,15 +176,15 @@ class ViewController: UIViewController {
 			
 		lbResult.text = String(a)
 		userDefaults.removeObject(forKey: "Tasu")
+		
 
-
-//		let userDefaults02 = UserDefaults.standard
-//		let loadHiku = userDefaults02.integer(forKey: "Hiku")
-//		let b = loadHiku - Int(tfValue01.text!)!
-//		
-//		lbResult.text = String(b)
-//		userDefaults02.removeObject(forKey: "Hiku")
-//		
+		let userDefaults02 = UserDefaults.standard
+		let loadHiku = userDefaults02.integer(forKey: "Hiku")
+		let b = loadHiku - Int(tfValue01.text!)!
+		
+		lbResult.text = String(b)
+		userDefaults02.removeObject(forKey: "Hiku")
+//
 //		let userDefaults03 = UserDefaults.standard
 //		let loadKakeru = userDefaults03.integer(forKey: "Kakeru")
 //		let c = loadKakeru * Int(tfValue01.text!)!
