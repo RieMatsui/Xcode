@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 	@IBOutlet weak var tfValue02: UITextField!
 	@IBOutlet weak var lbResult: UILabel!
 	
+	@IBOutlet weak var lbKeisan: UILabel!
+
 	
     //それぞれのボタンにアウトレット設定をする
 	@IBOutlet weak var btTasu: UIButton!
@@ -116,6 +118,7 @@ class ViewController: UIViewController {
 			userDefaults.register(defaults: [ "Tasu" : "default" ])
 			userDefaults.set(sum01,forKey: "Tasu")
 			tfValue01.text = ""
+			lbKeisan.text = "+"
 		}
 		else{
 			
@@ -124,6 +127,7 @@ class ViewController: UIViewController {
 			userDefaults.register(defaults: [ "Tasu" : "default" ])
 			userDefaults.set(str01,forKey: "Tasu")
 			tfValue01.text = ""
+			lbKeisan.text = "+"
 		}
 		
 	}
@@ -137,6 +141,8 @@ class ViewController: UIViewController {
 			userDefaults02.register(defaults: [ "Hiku" : "default" ])
 			userDefaults02.set(sum01,forKey: "Hiku")
 			tfValue01.text = ""
+			lbKeisan.text = "-"
+			
 		}
 		else{
 			
@@ -145,6 +151,7 @@ class ViewController: UIViewController {
 			userDefaults02.register( defaults: [ "Hiku" : "default" ])
 			userDefaults02.set(str01,forKey: "Hiku")
 			tfValue01.text = ""
+			lbKeisan.text = "-"
 		}
 	}
 	
@@ -156,6 +163,7 @@ class ViewController: UIViewController {
 			userDefaults03.register(defaults: [ "Kakeru" : "default" ])
 			userDefaults03.set(sum01,forKey: "Kakeru")
 			tfValue01.text = ""
+			lbKeisan.text = "×"
 		}
 		else{
 			
@@ -164,11 +172,13 @@ class ViewController: UIViewController {
 			userDefaults03.register(defaults: [ "Kakeru" : "default" ])
 			userDefaults03.set(str01,forKey: "Kakeru")
 			tfValue01.text = ""
+			lbKeisan.text = "×"
 		}
 	}
 	
 	@IBAction func pushEqual(_ sender: Any) {
 		
+		if lbKeisan.text == "+" {
 		
 		let userDefaults = UserDefaults.standard
 		let loadtasu = userDefaults.integer(forKey: "Tasu")
@@ -177,23 +187,41 @@ class ViewController: UIViewController {
 		lbResult.text = String(a)
 		userDefaults.removeObject(forKey: "Tasu")
 		
-
+		}
+		
+		
+		else if lbKeisan.text == "-" {
+			
 		let userDefaults02 = UserDefaults.standard
 		let loadHiku = userDefaults02.integer(forKey: "Hiku")
 		let b = loadHiku - Int(tfValue01.text!)!
 		
 		lbResult.text = String(b)
 		userDefaults02.removeObject(forKey: "Hiku")
-//
-//		let userDefaults03 = UserDefaults.standard
-//		let loadKakeru = userDefaults03.integer(forKey: "Kakeru")
-//		let c = loadKakeru * Int(tfValue01.text!)!
-//		
-//		lbResult.text = String(c)
-//		userDefaults03.removeObject(forKey: "Kakeru")
 		
+		}
 		
+	    else if lbKeisan.text == "×"{
+			
+	    let userDefaults03 = UserDefaults.standard
+		let loadKakeru = userDefaults03.integer(forKey: "Kakeru")
+		let c = loadKakeru * Int(tfValue01.text!)!
 		
+		lbResult.text = String(c)
+		userDefaults03.removeObject(forKey: "Kakeru")
+			
+		}
+		
+		else if lbKeisan.text == "÷"{
+			
+			let userDefaults03 = UserDefaults.standard
+			let loadKakeru = userDefaults03.integer(forKey: "Waru")
+			let c = loadKakeru * Int(tfValue01.text!)!
+			
+			lbResult.text = String(c)
+			userDefaults03.removeObject(forKey: "Waru")
+		
+		}
 	}
 	
 //		//テキストフィールドの値を定数を宣言(String型）

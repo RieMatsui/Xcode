@@ -248,6 +248,13 @@
                                     <action selector="pushHiku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mhc-Ud-zbN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-g6-OQ9">
+                                <rect key="frame" x="280" y="399" width="72" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.36581106906286431" green="0.72096227998105977" blue="1" alpha="0.60000002379999995" colorSpace="calibratedRGB"/>
                     </view>
@@ -258,13 +265,14 @@
                         <outlet property="btKakeru" destination="leq-62-OoH" id="mGl-cc-XOq"/>
                         <outlet property="btTasu" destination="g9A-06-gyw" id="6lE-95-9WZ"/>
                         <outlet property="btWaru" destination="sK2-e7-qOw" id="pya-rO-8X9"/>
+                        <outlet property="lbKeisan" destination="OKL-g6-OQ9" id="RDl-F8-7Dh"/>
                         <outlet property="lbResult" destination="PLP-CG-U55" id="nNU-ej-hjV"/>
                         <outlet property="tfValue01" destination="2dt-wR-dDD" id="9O7-vU-PRM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2564" y="-1163"/>
+            <point key="canvasLocation" x="218" y="-1760"/>
         </scene>
     </scenes>
     <resources>
