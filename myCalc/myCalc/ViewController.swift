@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 	@IBOutlet weak var tfValue02: UITextField!
 	@IBOutlet weak var lbResult: UILabel!
 	
+	@IBOutlet weak var lbTasu: UILabel!
+	
 	
     //それぞれのボタンにアウトレット設定をする
 	@IBOutlet weak var btTasu: UIButton!
@@ -120,7 +122,6 @@ class ViewController: UIViewController {
 				
 			}
 			
-			
 		
 		else{
 			
@@ -135,7 +136,7 @@ class ViewController: UIViewController {
 			
 			}
 			
-		if sender.tag == 6 && lbResult.text != ""{
+		
 				
 				let userDefaults = UserDefaults.standard
 				let loadtasu = userDefaults.integer(forKey: "Tasu")
@@ -145,7 +146,6 @@ class ViewController: UIViewController {
 				userDefaults.removeObject(forKey: "Tasu")
 			
 			
-		  }
 			
 		
 		}
