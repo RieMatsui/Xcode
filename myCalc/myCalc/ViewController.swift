@@ -14,8 +14,7 @@ class ViewController: UIViewController {
 	@IBOutlet weak var tfValue02: UITextField!
 	@IBOutlet weak var lbResult: UILabel!
 	
-	@IBOutlet weak var lbTasu: UILabel!
-	
+	@IBOutlet weak var lbKeisan: UILabel!
 	
     //それぞれのボタンにアウトレット設定をする
 	@IBOutlet weak var btTasu: UIButton!
@@ -107,49 +106,131 @@ class ViewController: UIViewController {
 		
 	}
 	
-	@IBAction func pushTasu(_ sender: UIButton) {
+	//四則演算ボタンを押した時
+	@IBAction func pushKeisan(_ sender: UIButton) {
 		
-		// +キーを押したとき
-		if sender.tag == 1 {
-		
-		if lbResult.text != "" {
+		//連続して計算する
+		if lbResult.text == "" {
 			
-			let sum01 = Int(lbResult.text!)!
-			let userDefaults = UserDefaults.standard
-			userDefaults.register(defaults: [ "Tasu" : "default" ])
-			userDefaults.set(sum01,forKey: "Tasu")
-			tfValue01.text = ""
-				
-			}
-			
-		
-		else{
-			
-			
+			//初めて計算するとき
 			let str01 = tfValue01.text!
 			let userDefaults = UserDefaults.standard
-			userDefaults.register(defaults: [ "Tasu" : "default" ])
-			userDefaults.set(str01,forKey: "Tasu")
+			userDefaults.register(defaults: [ "Keisan" : "default" ])
+			userDefaults.set(str01,forKey: "Keisan")
 			tfValue01.text = ""
 			
-
+		}
 			
-			}
+		else{
 			
+			//二回目以降連続して計算するとき
+			let sum01 = Float(lbResult.text!)!
+			let userDefaults = UserDefaults.standard
+			userDefaults.register(defaults: [ "Keisan" : "default" ])
+			userDefaults.set(sum01,forKey: "Keisan")
+			tfValue01.text = ""
+			
+	
+		}
 		
+		//計算式を保存
+			switch sender.tag {
+			case 1:
+				lbKeisan.text = "+"
+			case 2:
+				lbKeisan.text = "-"
+			case 3:
+				lbKeisan.text = "×"
+			case 4:
+				lbKeisan.text = "÷"
+			case 5:
+				lbKeisan.text = "%"
 				
-				let userDefaults = UserDefaults.standard
-				let loadtasu = userDefaults.integer(forKey: "Tasu")
-				let a = loadtasu + Int(tfValue01.text!)!
-				
-				lbResult.text = String(a)
-				userDefaults.removeObject(forKey: "Tasu")
+			default:
+				lbKeisan.text = ""
+			}
+
+	}
+
+	@IBAction func pushEqual(_ sender: Any) {
+		
+		//前回入力した文字を呼び出す
+		let userDefaults = UserDefaults.standard
+		let loadKeisan = userDefaults.float(forKey: "Keisan")
+		
+		//足し算のとき
+		if lbKeisan.text == "+"{
 			
+			let a = loadKeisan + Float(tfValue01.text!)!
+			lbResult.text = String(a)
+			userDefaults.removeObject(forKey: "Keisan")
+		}
+		
+		//引き算の時
+		else if lbKeisan.text == "-"{
 			
-			
+			let a = loadKeisan - Float(tfValue01.text!)!
+			lbResult.text = String(a)
+			userDefaults.removeObject(forKey: "Keisan")
 		
 		}
 		
+		//掛け算の時
+		else if lbKeisan.text == "×"{
+			
+			let a = loadKeisan * Float(tfValue01.text!)!
+			lbResult.text = String(a)
+			userDefaults.removeObject(forKey: "Keisan")
+		
+		}
+			
+		//割り算の時
+		else if lbKeisan.text == "÷" {
+			
+			
+			
+		     if Float(tfValue01.text!)! != 0.0 {
+			
+		     //num02が0ではない時は計算します
+			
+		     let a  = String(loadKeisan / Float(tfValue01.text!)! )
+			 lbResult.text = String(a)
+		     }
+			
+				
+		     else{
+			//num02が0の時は入力できないと表示
+			lbResult.text = "0は入力できません"
+							return
+			}
+			
+		}
+			
+		//あまり計算の時
+			
+		else if lbKeisan.text == "÷"{
+		    let a =	loadKeisan / Float(tfValue01.text!)!
+			
+			lbResult.text = String(a)
+			userDefaults.removeObject(forKey: "Keisan")
+		}
+
+    }
+
+}
+				
+//				let userDefaults = UserDefaults.standard
+//				let loadtasu = userDefaults.integer(forKey: "Tasu")
+//				let a = loadtasu + Int(tfValue01.text!)!
+//				
+//				lbResult.text = String(a)
+//				userDefaults.removeObject(forKey: "Tasu")
+//			
+			
+			
+	
+
+
 		// -キーボードを押した時
 		
 //		if sender.tag == 2 {
@@ -181,59 +262,55 @@ class ViewController: UIViewController {
 		
 		
 		
-		
+	
+//	@IBAction func pushHiku(_ sender: Any) {
+//		
+//		if lbResult.text != "" {
+//			
+//			let sum01 = Int(lbResult.text!)!
+//			let userDefaults02 = UserDefaults.standard
+//			userDefaults02.register(defaults: [ "Hiku" : "default" ])
+//			userDefaults02.set(sum01,forKey: "Hiku")
+//			tfValue01.text = ""
+//		}
+//		else{
+//			
+//			let str01 = tfValue01.text!
+//			let userDefaults02 = UserDefaults.standard
+//			userDefaults02.register(defaults: [ "Hiku" : "default" ])
+//			userDefaults02.set(str01,forKey: "Hiku")
+//			tfValue01.text = ""
+//		}
+//	}
+//	
+//	@IBAction func pushKakeru(_ sender: Any) {
+//		if lbResult.text != "" {
+//			
+//			let sum01 = Int(lbResult.text!)!
+//			let userDefaults03 = UserDefaults.standard
+//			userDefaults03.register(defaults: [ "Kakeru" : "default" ])
+//			userDefaults03.set(sum01,forKey: "Kakeru")
+//			tfValue01.text = ""
+//		}
+//		else{
+//			
+//			let str01 = tfValue01.text!
+//			let userDefaults03 = UserDefaults.standard
+//			userDefaults03.register(defaults: [ "Kakeru" : "default" ])
+//			userDefaults03.set(str01,forKey: "Kakeru")
+//			tfValue01.text = ""
+//		}
+//	}
+
 
 		
-	}
-	
-	@IBAction func pushHiku(_ sender: Any) {
-		
-		if lbResult.text != "" {
-			
-			let sum01 = Int(lbResult.text!)!
-			let userDefaults02 = UserDefaults.standard
-			userDefaults02.register(defaults: [ "Hiku" : "default" ])
-			userDefaults02.set(sum01,forKey: "Hiku")
-			tfValue01.text = ""
-		}
-		else{
-			
-			let str01 = tfValue01.text!
-			let userDefaults02 = UserDefaults.standard
-			userDefaults02.register(defaults: [ "Hiku" : "default" ])
-			userDefaults02.set(str01,forKey: "Hiku")
-			tfValue01.text = ""
-		}
-	}
-	
-	@IBAction func pushKakeru(_ sender: Any) {
-		if lbResult.text != "" {
-			
-			let sum01 = Int(lbResult.text!)!
-			let userDefaults03 = UserDefaults.standard
-			userDefaults03.register(defaults: [ "Kakeru" : "default" ])
-			userDefaults03.set(sum01,forKey: "Kakeru")
-			tfValue01.text = ""
-		}
-		else{
-			
-			let str01 = tfValue01.text!
-			let userDefaults03 = UserDefaults.standard
-			userDefaults03.register(defaults: [ "Kakeru" : "default" ])
-			userDefaults03.set(str01,forKey: "Kakeru")
-			tfValue01.text = ""
-		}
-	}
-	
-//	@IBAction func pushEqual(_ sender: Any) {
-//		
 //		
 //		let userDefaults = UserDefaults.standard
-//		let loadtasu = userDefaults.integer(forKey: "Tasu")
+//		let loadtasu = userDefaults.integer(forKey: "Kaisan")
 //		let a = loadtasu + Int(tfValue01.text!)!
 //			
 //		lbResult.text = String(a)
-//		userDefaults.removeObject(forKey: "Tasu")
+//		userDefaults.removeObject(forKey: "Keisan")
 
 
 //		let userDefaults02 = UserDefaults.standard
@@ -249,11 +326,9 @@ class ViewController: UIViewController {
 //		
 //		lbResult.text = String(c)
 //		userDefaults03.removeObject(forKey: "Kakeru")
-//		
-//		
-//		
-//	}
-	
+		
+
+
 //		//テキストフィールドの値を定数を宣言(String型）
 //		let str01 = tfValue01.text!
 //		let str02 = tfValue02.text!
@@ -334,5 +409,4 @@ class ViewController: UIViewController {
 //		
 //	}
 	
-}
 
